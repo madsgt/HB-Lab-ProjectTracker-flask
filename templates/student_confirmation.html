@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Student Confirmation</title>
+</head>
+<body>
+    <div class="flashes">
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %}
+</div>
+<a href='/student' value= 'github'></a> 
+
+<!-- need to review how to do the a tag for reference -->
+
+</body>
+</html>
