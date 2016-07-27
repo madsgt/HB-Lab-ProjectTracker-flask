@@ -7,5 +7,16 @@
 <h1>{{ first }} {{ last }} </h1>
 
 <p>Github Account: {{ github }}</p>
+
+{% if rows %}
+
+<ul>
+    {% for row in rows %}
+        <li>{{ row }}</li>
+    {% endfor %}
+   
+</ul>
+ {% endif %}
+
 </body>
 </html>
